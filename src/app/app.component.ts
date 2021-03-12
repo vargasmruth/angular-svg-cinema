@@ -14,7 +14,7 @@ export class AppComponent {
     this.data = DATA;
   }
 
-  changeColor(i: number) {
+  reserve(i: number) {
     if (this.data[i].code && this.data[i].color == EnumColor.DISPONIBLE) {
       this.data[i].color = EnumColor.SELECCIONADO;
       this.data[i].status = EnumStatus.SELECCIONADO;
